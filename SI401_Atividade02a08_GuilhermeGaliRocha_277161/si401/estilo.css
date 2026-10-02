@@ -1,0 +1,250 @@
+/* Folha de estilos externa do site da disciplina SI401 */
+/* Usada por todas as páginas através da tag <link> */
+
+
+/* ---------- Layout geral (display: grid - Unidade 08) ---------- */
+
+body {
+	display: grid;
+	grid-template-areas:
+		"head head head"
+		"nav main aside"
+		"foot foot foot";
+	grid-template-columns: 2fr 7fr 2fr;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #222222;
+	background-color: #F4F4F4;
+}
+
+
+/* ---------- Cabeçalho ---------- */
+
+header {
+	grid-area: head;
+	height: 110px;
+	padding: 0 20px;
+	/* propriedade abreviada: cor, imagem, repetição e posição */
+	background: #1E3A5F url("imagens/faixa-cabecalho.jpg") no-repeat right top;
+	color: white;
+}
+
+header h1 {
+	margin: 0;
+	padding-top: 20px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 2em;
+}
+
+header p {
+	margin: 8px 0 0 0;
+	font-size: 0.95em;
+}
+
+
+/* ---------- Menu de navegação (barra lateral esquerda) ---------- */
+
+nav {
+	grid-area: nav;
+	padding: 15px;
+	background-color: #DCEEFF;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin-bottom: 8px;
+}
+
+nav a {
+	display: block;
+	padding: 8px 10px;
+	border-left: 4px solid #1E3A5F;
+	background-color: white;
+	color: #1E3A5F;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* classe usada para destacar a página em que o usuário está */
+nav a.atual {
+	background-color: #1E3A5F;
+	color: white;
+}
+
+
+/* ---------- Conteúdo principal ---------- */
+
+main {
+	grid-area: main;
+	padding: 10px 25px;
+}
+
+section {
+	margin: 15px 0;
+	padding: 5px 20px 15px 20px;
+	border: 1px solid #CCCCCC;
+	background-color: white;
+}
+
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+	color: #1E3A5F;
+	border-bottom: 2px solid #1E3A5F;
+	padding-bottom: 4px;
+}
+
+h3 {
+	color: #1E3A5F;
+}
+
+main p {
+	text-align: justify;
+	text-indent: 32px;
+	line-height: 1.5;
+}
+
+main li {
+	line-height: 1.5;
+	margin-bottom: 4px;
+}
+
+a {
+	color: #0B5CAD;
+}
+
+
+/* ---------- Imagens ---------- */
+
+.foto {
+	display: block;
+	width: 500px;
+	margin: 10px auto 0 auto;
+	border: 1px solid #999999;
+}
+
+.foto-toupeira {
+	display: block;
+	width: 320px;
+	margin: 10px auto 0 auto;
+}
+
+/* parágrafo de legenda abaixo das fotos */
+main p.legenda {
+	text-align: center;
+	text-indent: 0;
+	font-size: 0.85em;
+	font-style: italic;
+	color: #555555;
+}
+
+.logo {
+	width: 90px;
+	height: 90px;
+}
+
+
+/* ---------- Tabelas (Unidade 07 - W3Schools Tables) ---------- */
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 10px 0;
+}
+
+caption {
+	font-weight: bold;
+	padding: 6px;
+	color: #1E3A5F;
+}
+
+th, td {
+	border: 1px solid #999999;
+	padding: 6px 10px;
+	text-align: left;
+}
+
+th {
+	background-color: #DCEEFF;
+	color: #1E3A5F;
+}
+
+/* tabela com as logos das linguagens (sem bordas, centralizada) */
+table.tecnologias td {
+	border: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+/* ---------- Fórmulas da avaliação ---------- */
+
+main p.formula {
+	text-indent: 0;
+	text-align: center;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.15em;
+	padding: 8px;
+	background-color: #EEF5FC;
+	border: 1px dashed #1E3A5F;
+}
+
+
+/* ---------- iFrame da página de conteúdo ---------- */
+
+/* 99% porque a borda (2px de cada lado) soma na largura total (box model) */
+iframe {
+	width: 99%;
+	height: 500px;
+	border: 2px solid #1E3A5F;
+}
+
+
+/* ---------- Barra lateral direita ---------- */
+
+aside {
+	grid-area: aside;
+	padding: 15px;
+	background-color: #DCEEFF;
+	font-size: 0.9em;
+}
+
+aside h2 {
+	font-size: 1.3em;
+}
+
+aside ul {
+	padding-left: 18px;
+}
+
+aside li {
+	margin-bottom: 6px;
+}
+
+.aviso {
+	padding: 10px;
+	border: 2px solid #C0392B;
+	background-color: #FDEDEC;
+	color: #922B21;
+}
+
+
+/* ---------- Rodapé ---------- */
+
+footer {
+	grid-area: foot;
+	padding: 10px;
+	background-color: #1E3A5F;
+	color: white;
+	text-align: center;
+	font-size: 0.85em;
+}
+
+footer a {
+	color: #DCEEFF;
+}

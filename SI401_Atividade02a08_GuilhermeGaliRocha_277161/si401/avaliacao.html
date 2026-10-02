@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Guilherme Gali Rocha">
+	<meta name="description" content="Critérios de avaliação e Projeto Final da disciplina SI401">
+	<title>SI401 - Avaliação</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+	<!-- Cabeçalho -->
+	<header>
+		<h1>SI401 &ndash; Programação para a Web</h1>
+		<p>Faculdade de Tecnologia (FT) &ndash; Unicamp &ndash; 2º Semestre de 2026 &ndash; Turma B</p>
+	</header>
+
+	<!-- Menu de navegação -->
+	<nav>
+		<ul>
+			<li><a href="index.html">Início</a></li>
+			<li><a href="objetivos.html">Objetivos</a></li>
+			<li><a href="conteudo.html">Conteúdo</a></li>
+			<li><a href="avaliacao.html" class="atual">Avaliação</a></li>
+			<li><a href="referencias.html">Referências</a></li>
+		</ul>
+	</nav>
+
+	<!-- Conteúdo principal -->
+	<main>
+
+		<section>
+			<h2>Critérios de Avaliação</h2>
+			<p>A avaliação da disciplina é composta por um <strong>Projeto Final</strong>, desenvolvido em
+			grupo e dividido em três entregas parciais, e por uma série de <strong>exercícios práticos
+			de fixação</strong>, desenvolvidos individualmente. No Projeto Final, a nota de cada aluno é
+			atribuída conforme a sua contribuição em cada etapa.</p>
+
+			<h3>Nota do Projeto Final (P)</h3>
+			<p class="formula">P = 0,10 &middot; P<sub>1</sub> + 0,45 &middot; P<sub>2</sub> + 0,45 &middot; P<sub>3</sub></p>
+
+			<h3>Média parcial (M)</h3>
+			<p class="formula">M = 0,75 &middot; P + 0,25 &middot; T</p>
+			<p>Em que P<sub>1</sub>, P<sub>2</sub> e P<sub>3</sub> são as notas das três parciais do
+			Projeto e T é a média dos exercícios práticos de fixação.</p>
+
+			<h3>Média final (MF)</h3>
+			<table>
+				<caption>Situação do aluno de acordo com a média parcial</caption>
+				<tr>
+					<th>Média parcial</th>
+					<th>Situação</th>
+					<th>Média final</th>
+				</tr>
+				<tr>
+					<td>M &lt; 2,5</td>
+					<td>Reprovação direta</td>
+					<td>MF = M</td>
+				</tr>
+				<tr>
+					<td>2,5 &le; M &lt; 6,0</td>
+					<td>Exame obrigatório (aprovado se MF &ge; 5,0)</td>
+					<td>MF = 0,6 &middot; M + 0,4 &middot; E</td>
+				</tr>
+				<tr>
+					<td>M &ge; 6,0</td>
+					<td>Aprovação direta</td>
+					<td>MF = M</td>
+				</tr>
+			</table>
+			<p>Além da nota, é necessário ter <strong>frequência mínima de 75%</strong>. O exame não
+			substitui avaliações em caso de falta abonada.</p>
+		</section>
+
+		<section>
+			<h2>Projeto Final: Acerte a Toupeira</h2>
+			<img src="imagens/acerte-a-toupeira.jpg" alt="Ilustração do jogo Acerte a Toupeira" class="foto-toupeira">
+			<p class="legenda">Ilustração do jogo Acerte a Toupeira.</p>
+			<p>No Projeto Final, cada grupo (de 4 a 5 alunos) desenvolverá uma plataforma online para o
+			jogo <em>Acerte a Toupeira</em> (<em>Whac-a-Mole</em>), um jogo de <em>arcade</em> criado em
+			1975, no Japão. O jogo terá as modalidades &ldquo;Clássica&rdquo; e &ldquo;Explosiva&rdquo;,
+			níveis de dificuldade, histórico de partidas e um <em>ranking</em> de jogadores. O jogo será
+			feito em JavaScript (<em>front-end</em>) e a autenticação e o armazenamento dos dados em PHP
+			com MySQL/MariaDB (<em>back-end</em>).</p>
+			<table>
+				<caption>Entregas parciais do Projeto Final</caption>
+				<tr>
+					<th>Parcial</th>
+					<th>O que deve ser entregue</th>
+					<th>Peso</th>
+					<th>Data</th>
+				</tr>
+				<tr>
+					<td>1ª</td>
+					<td>Páginas HTML não-funcionais, já com todo o estilo em CSS e a navegação final.</td>
+					<td>10%</td>
+					<td>05/10</td>
+				</tr>
+				<tr>
+					<td>2ª</td>
+					<td>Dinâmica do jogo implementada e funcionando em JavaScript (ainda sem <em>back-end</em>).</td>
+					<td>45%</td>
+					<td>07/11</td>
+				</tr>
+				<tr>
+					<td>3ª</td>
+					<td>Versão final, com <em>back-end</em> em PHP, controle de acesso e banco de dados.</td>
+					<td>45%</td>
+					<td>30/11</td>
+				</tr>
+			</table>
+			<p>Cada parcial deve ser acompanhada de um vídeo de até 10 minutos, em que todos os membros
+			do grupo apresentam o que foi desenvolvido. Saiba mais sobre o jogo original na
+			<a href="https://en.wikipedia.org/wiki/Whac-A-Mole">Wikipédia</a>.</p>
+		</section>
+
+		<section>
+			<h2>Observações Importantes</h2>
+			<ul>
+				<li>Não serão aceitas atividades entregues fora do prazo;</li>
+				<li>Todas as atividades práticas de fixação devem ser desenvolvidas individualmente;</li>
+				<li>Todos os documentos HTML e CSS devem ser validados nos sites do W3C;</li>
+				<li>Caso seja detectada qualquer forma de fraude, todos os alunos envolvidos ficarão com
+				média 0,0 na disciplina e a infração será reportada à Coordenação de Curso.</li>
+			</ul>
+		</section>
+
+	</main>
+
+	<!-- Barra lateral direita -->
+	<aside>
+		<h2>Avisos</h2>
+		<p class="aviso">Entrega da <strong>1ª parcial</strong> do Projeto Final: <strong>05/10</strong>.</p>
+
+		<h2>Links Úteis</h2>
+		<ul>
+			<li><a href="https://moodle.ggte.unicamp.br/">Moodle Unicamp</a></li>
+			<li><a href="https://www.dac.unicamp.br/">DAC Unicamp</a></li>
+			<li><a href="https://www.ft.unicamp.br/">FT Unicamp</a></li>
+			<li><a href="https://validator.w3.org/">Validador HTML (W3C)</a></li>
+			<li><a href="https://jigsaw.w3.org/css-validator/">Validador CSS (W3C)</a></li>
+		</ul>
+	</aside>
+
+	<!-- Rodapé -->
+	<footer>
+		<p>Site desenvolvido por Guilherme Gali Rocha (RA 277161) &ndash; Atividade de Fixação: Unidades 02 a 08.</p>
+		<p>Imagens utilizadas apenas para fins acadêmicos.</p>
+	</footer>
+
+</body>
+</html>
